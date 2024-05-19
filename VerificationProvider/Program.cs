@@ -16,6 +16,7 @@ var host = new HostBuilder()
         services.AddScoped<IVerificationService, VerificationService>();
         services.AddScoped<IVerificationCleanerService, VerificationCleanerService>();
         services.AddScoped<IValidateVerificationCodeService, ValidateVerificationCodeService>();
+        services.AddScoped<ISendMessageService, SendMessageService>();
 
     })
     .Build();
